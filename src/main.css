@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body {
+    @apply text-main_color font-sans;
+}
+
+.container {
+    @apply max-w-[83.75rem] mx-auto px-6;
+}
+
+

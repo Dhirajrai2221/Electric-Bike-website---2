@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike website</title>
+    <link
+      rel="shortcut icon"
+      href="../img/favicon/wheel.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="tailwind.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="bg-white border-b border-[#EAE8F3] fixed top-0 left-0 right-0 z-[999]"
+    >
+      <nav
+        class="container h-[6.25rem] flex justify-between items-center uppercase text-sm"
+      >
+        <img src="../img/logo/logo (1).svg" alt="" />
+        <ul class="sm:flex gap-[3.75rem] items-center text-sm hidden">
+          <li>
+            <a
+              class="hover:text-black hover:underline transition-all duration-300 ease-in-out"
+              href="#"
+              >Products
+              <i class="fa-solid fa-angle-down text-xs"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="hover:text-black hover:underline transition-all duration-300 ease-in-out"
+              href="#"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-black hover:underline transition-all duration-300 ease-in-out"
+              href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="flex items-center gap-5 text-sm">
+          <a
+            class="py-3 px-6 rounded hover:bg-black hover:text-white transition-all duration-300 ease-in-out"
+            href="#"
+            >Log in</a
+          >
+          <a
+            class="bg-main_color text-white py-3 px-6 rounded hover:translate-y-[-6px] hover:shadow-2xl active:translate-y-[-3px] active:shadow-xl transition-all duration-300 ease-in-out"
+            href="#"
+            >Sign up</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section
+      class="min-h-screen w-ful pt-[8.375rem] sm:pb-[12.5rem] relative overflow-hidden"
+    >
+      <div class="container flex sm:items-center sm:flex-row flex-col">
+        <div class="">
+          <h1
+            class="sm:text-[5.625rem] text-[3.875rem] uppercase font-light sm:leading-[95px] leading-[1.2] tracking-[0.9px]"
+          >
+            Let's ride <br />
+            <span class="font-bold">the future.</span>
+          </h1>
+          <!-- divider -->
+          <div
+            class="h-1 max-w-xs bg-main_color sm:mt-[5.625rem] mt-[2.5rem] mb-[1.875rem] sm:mb-[3.875rem]"
+          ></div>
+          <p class="sm:text-[1.375rem] text-lg mb-[1.875rem] max-w-[22.5rem]">
+            Simple and sleek design with users in mind.
+          </p>
+          <!-- buy now -->
+          <div class="flex justify-between max-w-md mb-8">
+            <div class="flex items-center gap-5">
+              <div
+                class="w-[3.625rem] h-[3.625rem] sm:scale-100 scale-75 text-white bg-main_color flex justify-center items-center cursor-pointer hover:bg-white hover:text-main_color transition-all duration-300 ease-in-out"
+              >
+                <i class="fa-solid fa-right-long"></i>
+              </div>
+              <a class="sm:text-xl text-lg text-dark font-medium" href="#"
+                >Buy Now</a
+              >
+            </div>
+            <div class="flex gap-5">
+              <p
+                class="sm:text-lg text-sm sm:font-semibold font-bold leading-[25px]"
+              >
+                Watch our <br />
+                video how <br />
+                it works
+              </p>
+              <img src="../img/logo/Group 1000000694.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 sm:mr-[-32px]">
+          <img src="../img/image-min.png" alt="" />
+        </div>
+      </div>
+
+      <!-- Number  -->
+      <div
+        class="flex items-center sm:gap-9 justify-center sm:absolute sm:bottom-[-3%] sm:right-[9%] mb-24 sm:mb-0"
+      >
+        <h2
+          class="font-display sm:text-[9.375rem] text-[100px] sm:text-one_color text-light_white1 tracking-[1.5px]"
+        >
+          01
+        </h2>
+        <div class="flex w-[6.25rem] h-12 cursor-pointer">
+          <div
+            class="border-2 border-main_color flex justify-center items-center py-4 px-6 rounded-l-full border-r hover:bg-main_color hover:text-white transition-all duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div
+            class="border-2 border-main_color flex justify-center items-center py-4 px-6 rounded-r-full border-l hover:bg-main_color hover:text-white transition-all duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+      <!-- decoration -->
+      <img
+        class="absolute sm:w-auto sm:top-[20%] sm:right-0 -z-50 top-[50%]"
+        src="../img/decoration/bg.svg"
+        alt=""
+      />
+    </section>
+
+    <!-- Feature section -->
+    <section>
+      <div class="container py-[3.75rem] grid sm:grid-cols-3 grid-cols-2 gap-5">
+        <div class="rounded-md shadow-md py-8 px-9 text-center">
+          <h2 class="sm:text-[2.5rem] text-3xl font-bold mb-[1.125rem]">
+            105 <span class="text-lg">lbs</span>
+          </h2>
+          <p class="sm:font-[.8125rem] text-sm">Net Weight</p>
+        </div>
+        <div class="rounded-md shadow-md py-8 px-9 text-center">
+          <h2 class="sm:text-[2.5rem] text-3xl font-bold mb-[1.125rem]">
+            26 <span class="text-lg">mph</span>
+          </h2>
+          <p class="sm:font-[.8125rem] text-sm">Top Speed</p>
+        </div>
+        <div class="rounded-md shadow-md py-8 px-9 text-center">
+          <h2 class="sm:text-[2.5rem] text-3xl font-bold mb-[1.125rem]">
+            38 <span class="text-lg">miles</span>
+          </h2>
+          <p class="sm:font-[.8125rem] text-sm">Max Range</p>
+        </div>
+        <div class="rounded-md shadow-md py-8 px-9 text-center">
+          <h2 class="sm:text-[2.5rem] text-3xl font-bold mb-[1.125rem]">
+            89 <span class="text-lg">nm</span>
+          </h2>
+          <p class="sm:font-[.8125rem] text-sm">Max Torques</p>
+        </div>
+        <div class="rounded-md shadow-md py-8 px-9 text-center">
+          <h2 class="sm:text-[2.5rem] text-3xl font-bold mb-[1.125rem]">
+            22% <span class="text-lg">slope</span>
+          </h2>
+          <p class="sm:font-[.8125rem] text-sm">Hill Climbing</p>
+        </div>
+        <div class="rounded-md shadow-md py-8 px-9 text-center">
+          <h2 class="sm:text-[2.5rem] text-3xl font-bold mb-[1.125rem]">2x</h2>
+          <p class="sm:font-[.8125rem] text-sm">Hydralic Disc Brakes</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Information -->
+    <section>
+      <div class="container py-[5rem]">
+        <h2
+          class="sm:text-[3.125rem] text-[2.375rem] text-center font-bold leading-[120%] sm:mb-[2.125rem] mb-3"
+        >
+          Product Information
+        </h2>
+        <p class="text-center sm:text-xl text-lg leading-[140%] mb-5">
+          Our Scooter has following unique design and technology features:
+        </p>
+        <!-- Product specification -->
+        <div class="flex items-center sm:flex-row flex-col justify-between">
+          <!-- Product img -->
+          <div>
+            <img src="../img/image (1).png" alt="" />
+          </div>
+          <!-- featues -->
+          <div class="flex flex-col gap-[2.125rem]">
+            <div class="flex items-center gap-[1.125rem]">
+              <img src="../img/decoration/Icon.svg" alt="" />
+              <p class="text-xl leading-[140%]">
+                Lightweight aircraft grade aluminium frame
+              </p>
+            </div>
+            <div class="flex items-center gap-[1.125rem]">
+              <img src="../img/decoration/Icon.svg" alt="" />
+              <p class="text-xl leading-[140%]">Car grade lithium battery</p>
+            </div>
+            <div class="flex items-center gap-[1.125rem]">
+              <img src="../img/decoration/Icon.svg" alt="" />
+              <p class="text-xl leading-[140%]">Self-balanced</p>
+            </div>
+            <div class="flex items-center gap-[1.125rem]">
+              <img src="../img/decoration/Icon.svg" alt="" />
+              <p class="text-xl leading-[140%]">Plug n play</p>
+            </div>
+            <div class="flex items-center gap-[1.125rem]">
+              <img src="../img/decoration/Icon.svg" alt="" />
+              <p class="text-xl leading-[140%]">Quick release adapter</p>
+            </div>
+            <div class="flex items-center gap-[1.125rem]">
+              <img src="../img/decoration/Icon.svg" alt="" />
+              <p class="text-xl leading-[140%]">RFID key card</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- product information 2 -->
+
+    <section>
+      <div class="container sm:py-[5rem] py-[2.5rem]">
+        <h2
+          class="sm:text-[3.125rem] text-[2.375rem] text-center font-bold leading-[120%] sm:mb-[2.125rem] mb-3"
+        >
+          High Efficiency Motor
+        </h2>
+        <p class="text-center sm:text-xl text-lg leading-[140%]">
+          More torque for powerful riding with 22% maximum hill climbing
+          capability.
+        </p>
+        <div>
+          <img src="../img/image (2)-min.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--Accessories Section -->
+    <section>
+      <div class="container py-[5rem]">
+        <h2
+          class="sm:text-[3.125rem] text-[2.375rem] text-center font-bold leading-[120%] sm:mb-[2.125rem] mb-3"
+        >
+          Multiple Accessories
+        </h2>
+        <p
+          class="text-center sm:text-xl text-lg leading-[140%] sm:mb-[7.5rem] mb-[3.75rem]"
+        >
+          There are multiple modes for the scooter for your multiple needs.
+        </p>
+
+        <!-- Accessories col 1-->
+        <div class="grid sm:grid-cols-2 items-center sm:mb-28">
+          <div class="flex flex-col gap-[2.125rem]">
+            <h3 class="text-[3.125rem] font-bold leading-[120%]">
+              Golf Bag Rock
+            </h3>
+            <div class="flex items-center gap-[1.125rem]">
+              <img src="../img/decoration/Icon.svg" alt="" />
+              <p class="text-xl leading-[140%]">Material : Aluminium alloy</p>
+            </div>
+            <div class="flex items-center gap-[1.125rem]">
+              <img src="../img/decoration/Icon.svg" alt="" />
+              <p class="text-xl leading-[140%]">Color : Black</p>
+            </div>
+            <div class="flex items-center gap-[1.125rem]">
+              <img src="../img/decoration/Icon.svg" alt="" />
+              <p class="text-xl leading-[140%]">Capacity : 45lbs</p>
+            </div>
+            <div class="flex items-center gap-[1.125rem]">
+              <img src="../img/decoration/Icon.svg" alt="" />
+              <p class="text-xl leading-[140%]">Ease : Steady & adjustable</p>
+            </div>
+          </div>
+          <!-- images -->
+          <div
+            class="flex items-center sm:flex-row flex-col-reverse sm:ml-[-40%]"
+          >
+            <img src="../img/accessories/image5.png" alt="" />
+            <img src="../img/accessories/image4.png" alt="" />
+          </div>
+        </div>
+        <!-- Accessories col 2 -->
+        <div class="grid sm:grid-cols-2 sm:mb-[5.625rem] mb-[3.75rem]">
+          <!-- images -->
+          <div
+            class="flex items-center sm:ml-[-18%] sm:flex-row flex-col justify-between mb-[3.75rem]"
+          >
+            <img
+              class="ml-[-18%] sm:ml-0"
+              src="../img/accessories/image (9).png"
+              alt=""
+            />
+            <img src="../img/accessories/image (10).png" alt="" />
+          </div>
+          <div class="flex flex-col gap-[2.125rem] sm:mx-auto">
+            <h3 class="text-[3.125rem] font-bold leading-[120%]">
+              Shopping Rack
+            </h3>
+            <div class="flex items-center gap-[1.125rem]">
+              <img src="../img/decoration/Icon.svg" alt="" />
+              <p class="text-xl leading-[140%]">Material : Aluminium alloy</p>
+            </div>
+            <div class="flex items-center gap-[1.125rem]">
+              <img src="../img/decoration/Icon.svg" alt="" />
+              <p class="text-xl leading-[140%]">Color : Black</p>
+            </div>
+            <div class="flex items-center gap-[1.125rem]">
+              <img src="../img/decoration/Icon.svg" alt="" />
+              <p class="text-xl leading-[140%]">Capacity : 45lbs</p>
+            </div>
+            <div class="flex items-center gap-[1.125rem]">
+              <img src="../img/decoration/Icon.svg" alt="" />
+              <p class="text-xl leading-[140%]">Ease : Steady & adjustable</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- banner -->
+        <div class="flex justify-center text-center items-center">
+          <p
+            class="inline-block sm:text-[1.875rem] text-lg font-bold leading-[120%] border-2 border-main_color rounded-[.625rem] py-[30px] px-[3.875rem] mx-auto"
+          >
+            More Accessories Coming Soon
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery section -->
+
+    <section>
+      <div class="container py-[5rem]">
+        <h2
+          class="sm:text-[3.125rem] text-[2.375rem] text-center font-bold leading-[120%] sm:mb-[2.125rem] mb-3"
+        >
+          Gallery
+        </h2>
+        <p
+          class="text-center sm:text-xl text-lg leading-[140%] sm:mb-[7.5rem] mb-[3.75rem]"
+        >
+          View gallery of our products and make yourself satisfied with our
+          creation.
+        </p>
+        <!-- Photos -->
+        <div class="grid sm:grid-cols-2 gap-[4.625rem]">
+          <div
+            class="overflow-hidden hover:rounded-2xl transition-all duration-300 ease-in-out"
+          >
+            <img
+              class="block hover:scale-110 transition-all duration-300 ease-in-out"
+              src="../img/gallery/image (11).png"
+              alt=""
+            />
+          </div>
+          <div
+            class="overflow-hidden hover:rounded-2xl transition-all duration-300 ease-in-out"
+          >
+            <img
+              class="block hover:scale-110 transition-all duration-300 ease-in-out"
+              src="../img/gallery/image (12).png"
+              alt=""
+            />
+          </div>
+          <div class="flex flex-col gap-7 justify-end">
+            <a
+              href="#"
+              class="inline-block text-[1.875rem] font-bold py-[1.875rem] text-center border-2 border-main_color rounded-[.625rem] hover:bg-main_color hover:text-white transition-all duration-300 ease-in-out"
+              >Battery Images</a
+            >
+            <a
+              href="#"
+              class="inline-block text-[1.875rem] font-bold py-[1.875rem] text-center border-2 border-main_color rounded-[.625rem] hover:bg-main_color hover:text-white transition-all duration-300 ease-in-out"
+              >Spare Parts Images</a
+            >
+            <a
+              href="#"
+              class="inline-block text-[1.875rem] font-bold py-[1.875rem] text-center border-2 border-main_color rounded-[.625rem] hover:bg-main_color hover:text-white transition-all duration-300 ease-in-out"
+              >Charging Cable Images</a
+            >
+          </div>
+          <div
+            class="overflow-hidden hover:rounded-2xl transition-all duration-300 ease-in-out"
+          >
+            <img
+              class="block hover:scale-110 transition-all duration-300 ease-in-out"
+              src="../img/gallery/image (12).png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Color Section 1-->
+    <section>
+      <div class="container py-[5rem]">
+        <h2
+          class="sm:text-[3.125rem] text-[2.375rem] text-center font-bold leading-[120%] sm:mb-[2.375rem] mb-3"
+        >
+          Colors
+        </h2>
+        <p
+          class="text-center sm:text-xl text-lg leading-[140%] sm:mb-[6.25rem]"
+        >
+          Checkout our products colors.
+        </p>
+      </div>
+      <!-- Image -->
+      <div class="mt-[-10%] sm:mt-0">
+        <img src="../img/colour/image (14).png" alt="" />
+      </div>
+    </section>
+
+    <!-- Color section 2 -->
+    <section class="w-full min-h-[20rem] sm:mt-[-8%]">
+      <div class="container grid sm:grid-cols-4 grid-cols-2">
+        <div class="overflow-hidden">
+          <img
+            class="hover:scale-110 transition-all duration-300 ease-in-out"
+            src="../img/colour/1.png"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden">
+          <img
+            class="hover:scale-110 transition-all duration-300 ease-in-out"
+            src="../img/colour/2.png"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden">
+          <img
+            class="hover:scale-110 transition-all duration-300 ease-in-out"
+            src="../img/colour/3.png"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden">
+          <img
+            class="hover:scale-110 transition-all duration-300 ease-in-out"
+            src="../img/colour/4.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-light_white1">
+      <div class="container py-20">
+        <h2
+          class="sm:text-[3.125rem] text-[2.375rem] font-bold leading-[120%] text-center mb-10"
+        >
+          Testimonials
+        </h2>
+        <!-- Testimonials cards -->
+        <div class="grid sm:grid-cols-3 gap-9 mb-11">
+          <div
+            class="bg-white shadow-xl py-[3.25rem] px-9 flex flex-col items-center"
+          >
+            <!-- stars -->
+            <div class="flex mb-3">
+              <img src="../img/Testimonials/Star 4.svg" alt="" />
+              <img src="../img/Testimonials/Star 4.svg" alt="" />
+              <img src="../img/Testimonials/Star 4.svg" alt="" />
+              <img src="../img/Testimonials/Star 4.svg" alt="" />
+              <img src="../img/Testimonials/Star 4.svg" alt="" />
+            </div>
+            <p class="text-xl text-center leading-[140%] mb-12">
+              On the other hand, we denounce with righteous indignation and
+              dislike men who are so beguiled and demoralized by the charms of
+              pleasure.
+            </p>
+
+            <div class="flex items-center gap-5">
+              <div>
+                <img src="../img/Testimonials/Image15.png" alt="" />
+              </div>
+              <div>
+                <h3 class="font-medium">Serhiy Hipskyy</h3>
+                <p class="">CEO Universal</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-light_white1 border border-[#D8D8D8] py-[3.25rem] px-9 flex flex-col items-center"
+          >
+            <!-- stars -->
+            <div class="flex mb-3">
+              <img src="../img/Testimonials/Star 4.svg" alt="" />
+              <img src="../img/Testimonials/Star 4.svg" alt="" />
+              <img src="../img/Testimonials/Star 4.svg" alt="" />
+              <img src="../img/Testimonials/Star 4.svg" alt="" />
+              <img src="../img/Testimonials/Star 4.svg" alt="" />
+            </div>
+            <p class="text-xl text-center leading-[140%] mb-12">
+              Nam libero tempore, cum soluta nobis est eligendi optio cumque
+              nihil impedit quo minus id quod maxime placeat facere possimus.
+            </p>
+
+            <div class="flex items-center gap-5">
+              <div>
+                <img src="../img/Testimonials/Image17.png" alt="" />
+              </div>
+              <div>
+                <h3 class="font-medium">Justus Menke</h3>
+                <p class="">CEO Eronaman</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-light_white1 border border-[#D8D8D8] py-[3.25rem] px-9 flex flex-col items-center"
+          >
+            <!-- stars -->
+            <div class="flex mb-3">
+              <img src="../img/Testimonials/Star 4.svg" alt="" />
+              <img src="../img/Testimonials/Star 4.svg" alt="" />
+              <img src="../img/Testimonials/Star 4.svg" alt="" />
+              <img src="../img/Testimonials/Star 4.svg" alt="" />
+              <img src="../img/Testimonials/Star 4.svg" alt="" />
+            </div>
+            <p class="text-xl text-center leading-[140%] mb-12">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores.
+            </p>
+
+            <div class="flex items-center gap-5">
+              <div>
+                <img src="../img/Testimonials/Image16.png" alt="" />
+              </div>
+              <div>
+                <h3 class="font-medium">Britain Eriksen</h3>
+                <p class="">CEO Universal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- left-right Toggle button -->
+        <div class="flex gap-6 justify-center">
+          <div
+            class="w-[2.625rem] h-[2.625rem] flex justify-center items-center text-sm border border-main_color rounded-full cursor-pointer hover:translate-y-[-6px] hover:shadow-2xl active:translate-y-[-3px] active:shadow-xl transition-all duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <div
+            class="w-[2.625rem] h-[2.625rem] flex justify-center items-center text-sm border border-main_color rounded-full text-white bg-main_color cursor-pointer hover:translate-y-[-6px] hover:shadow-2xl active:translate-y-[-3px] active:shadow-xl transition-all duration-300 ease-in-out"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newspaper -->
+    <section>
+      <div class="container py-[8.125rem]">
+        <h2
+          class="sm:text-[3.125rem] text-[2.375rem] text-center font-bold leading-[120%] mb-3"
+        >
+          Subscribe To Newsletter
+        </h2>
+        <p
+          class="text-center sm:text-xl leading-[140%] sm:mb-[3.75rem] mb-[1.875rem]"
+        >
+          Subscribe to our newsletter to get amazing offers in future.
+        </p>
+        <div class="text-center flex sm:flex-row flex-col gap-5 justify-center">
+          <input
+            class="py-[1.625rem] pl-9 pr-[12.5rem] bg-[#f5f5f5] rounded-[.625rem] placeholder:text-main_color placeholder:text-xl text-main_color text-xl active:outline active:outline-main_color"
+            type="email"
+            placeholder="Enter your email."
+          />
+          <a
+            class="text-xl text-light_white2 leading-[140%] text-center bg-main_color py-7 px-14 rounded-[.625rem] hover:translate-y-[-4px] hover:shadow-2xl active:translate-y-[-2px] active:shadow-xl transition-all duration-200 ease-in-out"
+            href="#"
+            >Get start</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-main_color text-light_white2">
+      <div class="container flex sm:items-center sm:flex-row flex-col">
+        <div class="flex-1 sm:ml-[-18%] sm:mt-[-7%] mt-[-12%]">
+          <img src="../img/footer/image (18).png" alt="" />
+        </div>
+
+        <!-- Footer links -->
+        <div class="flex-1 flex sm:justify-around sm:flex-row flex-col gap-5">
+          <div>
+            <h3 class="text-[1.375rem] font-bold mb-4">About</h3>
+            <ul class="flex flex-col gap-5">
+              <li>
+                <a
+                  class="inline-block hover:translate-x-2 transition-all duration-150 ease-in-out"
+                  href="#"
+                  >Company</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-block hover:translate-x-2 transition-all duration-150 ease-in-out"
+                  href="#"
+                  >Teams</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-block hover:translate-x-2 transition-all duration-150 ease-in-out"
+                  href="#"
+                  >Profile</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-block hover:translate-x-2 transition-all duration-150 ease-in-out"
+                  href="#"
+                  >Careers</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-[1.375rem] font-bold mb-4">Resources</h3>
+            <ul class="flex flex-col gap-5">
+              <li>
+                <a
+                  class="inline-block hover:translate-x-2 transition-all duration-150 ease-in-out"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-block hover:translate-x-2 transition-all duration-150 ease-in-out"
+                  href="#"
+                  >Application</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-block hover:translate-x-2 transition-all duration-150 ease-in-out"
+                  href="#"
+                  >FQA Features</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-[1.375rem] font-bold mb-4">Legals</h3>
+            <ul class="mb-5 flex flex-col gap-5">
+              <li>
+                <a
+                  class="inline-block hover:translate-x-2 transition-all duration-150 ease-in-out"
+                  href="#"
+                  >Copyright Privacy</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-block hover:translate-x-2 transition-all duration-150 ease-in-out"
+                  href="#"
+                  >Policy Disclamier</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-block hover:translate-x-2 transition-all duration-150 ease-in-out"
+                  href="#"
+                  >Terms</a
+                >
+              </li>
+            </ul>
+            <!-- Social icons -->
+            <div class="flex gap-4 items-center">
+              <div
+                class="bg-light_white1 w-8 h-8 rounded-full text-main_color flex justify-center items-center hover:bg-main_color hover:text-light_white1 cursor-pointer transition-all duration-300 ease-in-out"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div
+                class="bg-light_white1 w-8 h-8 rounded-full text-main_color flex justify-center items-center hover:bg-main_color hover:text-light_white1 cursor-pointer transition-all duration-300 ease-in-out"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div
+                class="bg-light_white1 w-8 h-8 rounded-full text-main_color flex justify-center items-center hover:bg-main_color hover:text-light_white1 cursor-pointer transition-all duration-300 ease-in-out"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-main_color text-sm font-medium flex justify-center items-center py-5"
+      >
+        <p>Made with ❤️ by Dhiraj Rai.</p>
+      </div>
+    </footer>
+
+    <!-- spacer -->
+    <!-- <div class="h-[800px]"></div> -->
+    <script src="./app.js"></script>
+  </body>
+</html>
