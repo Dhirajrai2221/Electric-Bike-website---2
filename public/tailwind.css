@@ -598,6 +598,30 @@ video {
   top: 45%;
 }
 
+.top-\[65\%\]{
+  top: 65%;
+}
+
+.top-\[55\%\]{
+  top: 55%;
+}
+
+.top-\[60\%\]{
+  top: 60%;
+}
+
+.top-\[58\%\]{
+  top: 58%;
+}
+
+.top-\[56\%\]{
+  top: 56%;
+}
+
+.top-\[57\%\]{
+  top: 57%;
+}
+
 .-z-50{
   z-index: -50;
 }
@@ -679,16 +703,36 @@ video {
   margin-top: 2.5rem;
 }
 
-.mr-\[-1\]{
-  margin-right: -1;
+.mb-\[-0\.625rem\]{
+  margin-bottom: -0.625rem;
 }
 
-.mr-\[-10\%\]{
-  margin-right: -10%;
+.mb-\[2\.625rem\]{
+  margin-bottom: 2.625rem;
 }
 
-.mr-\[-3\%\]{
-  margin-right: -3%;
+.mb-\[\]{
+  margin-bottom: ;
+}
+
+.mb-\[5\]{
+  margin-bottom: 5;
+}
+
+.mb-\[3\.5rem\]{
+  margin-bottom: 3.5rem;
+}
+
+.mb-\[2rem\]{
+  margin-bottom: 2rem;
+}
+
+.mb-\[2\.25rem\]{
+  margin-bottom: 2.25rem;
+}
+
+.mb-\[-2\.25rem\]{
+  margin-bottom: -2.25rem;
 }
 
 .block{
@@ -952,6 +996,21 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-red-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.bg-red-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.bg-red-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
 .px-14{
   padding-left: 3.5rem;
   padding-right: 3.5rem;
@@ -1107,6 +1166,22 @@ video {
   line-height: 1rem;
 }
 
+.text-\[2\.5rem\]{
+  font-size: 2.5rem;
+}
+
+.text-\[3\.5rem\]{
+  font-size: 3.5rem;
+}
+
+.text-\[3\.375rem\]{
+  font-size: 3.375rem;
+}
+
+.text-\[3\.25rem\]{
+  font-size: 3.25rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -1170,6 +1245,10 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\]{
+  color: ;
 }
 
 .shadow-md{
@@ -1428,10 +1507,6 @@ html,body{
     margin-top: 5.625rem;
   }
 
-  .sm\:ml-\[10\%\]{
-    margin-left: 10%;
-  }
-
   .sm\:flex{
     display: flex;
   }
@@ -1485,6 +1560,14 @@ html,body{
 
   .sm\:pr-\[12\.5rem\]{
     padding-right: 12.5rem;
+  }
+
+  .sm\:pb-\[\]{
+    padding-bottom: ;
+  }
+
+  .sm\:pb-\[16\.25rem\]{
+    padding-bottom: 16.25rem;
   }
 
   .sm\:font-\[\.8125rem\]{
